@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     
     <title>Eliti</title>
     <style>
-    body{
-      background-color: rgb(0, 0, 0);
-    }
-       
-
+    
+       body{
+       }
         .container{
+          position: fixed;
             display: flex;
             justify-content: center;
             flex-direction: column;
             align-items: center;
-            background-color: black;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: #f1f1f1;
+            width: 100%;
+            padding: 20px;
             height: 100vh;
         }
        h1{
@@ -34,11 +34,11 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: beige;
+    background-color: rgb(85, 85, 82);
     margin: 50px 0px 0px 0px;
     width: 600px;
     border-radius: 16px;
-    box-shadow: 5px 5px 10px black;
+    box-shadow: 5px 5px 10px rgb(255, 255, 255);
 
    }
     #sortear{
@@ -46,13 +46,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(71, 64, 64);
     color: black;
     margin: 20px 0px 20px 0px;
     width: 200px;
     height: 40px;
     border-radius: 8px;
-    border-color: rgb(255, 255, 255);
+    border-color: rgb(214, 214, 214);
     box-shadow: 2px 2px 8px black;
     
         }
@@ -66,26 +66,30 @@
         }
    
 #zoom:hover {
-  -ms-transform: scale(1.5);
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5); 
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2); 
 }
+
     </style>
 </head>
-<body>
-  <div class="container">
+<body >
+
+  
+  <div class="container" >
     <div class="oi">
-      <img src="eliti.jpeg">
+      <img src="eliti.jpeg" width="600px">
          </div>
    
-       
+       <div style="text-align: left;">
+        h4
+       </div>
     
     <div id="zoom" class="display">
 
             <h1 style="background-color: black; text-align: center;">Abaixo sorteie sua atividade diaria</h1>
         <h3 id="result">Clique no botão para iniciar</h3>
         <button id="sortear" onclick="sortear()">Sortear Atividade</button>
-        <button id="sortear" onclick="eniar()">Realizar atividade</button>
       </div>
   </div>
 <script>
