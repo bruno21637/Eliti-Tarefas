@@ -3,16 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p> Seu nome
-        <input type="text">
-    </p>
-    <p>Sua senha    
-        <input type="password">
-    </p>
+   
+    <title>Eliti</title>
+    <style>
+    body{
+      background-color: black;
+    }
+        .container{
+          position: fixed;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: #e2e2e2;
+            width: 100%;
+            padding: 20px;
+            height: 100vh;
+        }
+       h1{
+           color: rgb(255, 255, 255);
+            font-family: Impact;
+
+       }
+
+       .display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(161, 161, 161);
+    margin: 50px 0px 0px 0px;
+    width: 600px;
+    border-radius: 16px;
+    box-shadow: 5px 5px 10px rgb(255, 255, 255);
+
+   }
+    #sortear{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    color: black;
+    margin: 20px 0px 20px 0px;
+    width: 200px;
+    height: 40px;
+    border-radius: 8px;
+    border-color: rgb(214, 214, 214);
+    box-shadow: 2px 2px 8px black;
     
+        }
+        .selection{
+
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+
+        }
+   
+#zoom:hover {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2); 
+}
+
+    </style>
+</head>
+<body >
+
+  
+ 
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="eliti.jpeg" alt="Los Angeles" style="width:100%;">
+      </div>
+
+<div class="container" >
+  <div class="oi">
+    <img src="eliti.jpeg" width="600px">
+       </div>
+ 
+     <div style="text-align: left;">
+      
+     </div>
+  
+  <div id="zoom" class="display">
+
+          <h1 style="background-color: black; text-align: center;">Abaixo Faça seu login</h1>
+
+            <h4 style="color: black;"> Seu E-mail:
+            <input type="email" placeholder="Seu E-mail" style="color: black;">
+        </h4>
+            <h4 style="color: black;">Seu nome
+            <input type="text" placeholder="Seu nome" style="color: black;">
+        </h4>
+
+            <h4 style="color: black;">Crie uma senha</h4>
+            <input type="password" placeholder="Crie uma senha" style="color: black;">
+            <input type="password" placeholder="Confirme sua senha" style="color: black;">
+        </h4>
+        <button>Criar Conta</button>
+    </div>
+</div>
+
+
 </body>
 </html>
