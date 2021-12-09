@@ -1,0 +1,93 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   
+    <title>Eliti</title>
+    <style>
+    body{
+      background-color: black;
+    }
+        .container{
+          position: fixed;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: #e2e2e2;
+            width: 100%;
+            padding: 20px;
+            height: 100vh;
+        }
+   
+       .display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(161, 161, 161);
+    margin: 50px 0px 0px 0px;
+    width: 600px;
+    border-radius: 16px;
+    box-shadow: 5px 5px 10px rgb(255, 255, 255);
+
+   }
+    
+#zoom:hover {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2); 
+}
+
+    </style>
+</head>
+<body >
+
+  
+ 
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="img.png" alt="Los Angeles" style="width:100%;">
+      </div>
+
+<div class="container" >
+  <div class="oi">
+    <img src="eliti.jpeg" width="600px">
+       </div>
+ 
+     <div style="text-align: left;">
+      
+     </div>
+  
+  <div id="zoom" class="display">
+
+            <p style="color: black;"> Seu E-mail: 
+
+            <input type="email" placeholder="Seu E-mail" style="color: black;">
+              
+
+            <p style="color: black;">Crie uma senha
+            <input type="password" placeholder="Crie uma senha" style="color: black;">
+            
+          </p>
+        <button>
+          <a href="tela.html">Entrar</a>
+        </button>
+    </div>
+</div>
+
+
+</body>
+</html>
