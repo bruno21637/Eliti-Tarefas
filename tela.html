@@ -5,13 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+         .ola{background-color: green;}
+.ola  {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  display:inline-block;
+}
+        ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+ul li {display: inline-block;}
+ul li:hover {background: rgb(108, 107, 110);}
+ul li:hover ul {display: block;}
+ul li ul {
+  position: absolute;
+  width: 400px;
+  display: none;
+}
+ul li ul li { 
+  background: rgb(255, 254, 254); 
+  display: block; 
+}
+ul li ul li a {display:block !important;} 
+ul li ul li:hover {background: rgb(255, 255, 255);}
+    </style>
 </head>
 <body style="background: black;">
+    <div class = "ola">
+        <ul>
+          <li>
+            <a >Alunos</a>
+            <ul>
+              <li><a href="atividades.html">atividades</a></li>
+              <li><a href="alunos.html">Alunos</a></li>
+            </ul>
+          </li>
+        </ul>
+      
+       
+      </div>
+
     <div style="text-align: center;">
         <img src="eliti.jpeg">
     </div>
     <div>
-     <img src="eliti.jpeg"sizes="" srcset="">
+     
     </div>
 </body>
 </html>
